@@ -1,1 +1,1 @@
-https://github.com/ahaoboy/rcm-turi
+https://github.com/ahaoboy/rcm-tauri
