@@ -1,0 +1,35 @@
+{
+  "name": "rcm-ahaoboy",
+  "version": "0.1.0",
+  "type": "module",
+  "homepage": "https://github.com/ahaoboy/rcm-ahaoboy",
+  "files": [
+    "dist",
+    "readme.md",
+    "package.json"
+  ],
+  "sideEffects": false,
+  "description": "rcm-ahaoboy",
+  "main": "dist/index.js",
+  "types": "./src/index.ts",
+  "scripts": {
+    "bundle": "esbuild ./src/* --bundle --platform=node --format=esm --outdir=dist --external:fs --external:path --external:os --external:url --charset=utf8",
+    "dts": "tsc -p ./tsconfig.build.json --declaration --emitDeclarationOnly",
+    "build": "npm run dts && npm run bundle",
+    "dev": "tsc -p ./tsconfig.build.json -w",
+    "test": "npx vitest run"
+  },
+  "keywords": [],
+  "author": "ahaoboy <504595380@qq.com> (https://github.com/ahaoboy)",
+  "license": "MIT",
+  "dependencies": {
+    "esbuild": "0.28.1",
+    "rcm": "^1.0.0",
+    "rcm-kit": "^0.1.0",
+    "type-fest": "5.4.4",
+    "typescript": "6.0.2"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.7"
+  }
+}
