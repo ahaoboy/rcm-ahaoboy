@@ -1,40 +1,52 @@
-/**
- * Lite right-click menu — essentials only, no icon ribbon.
- */
-import { Menu } from 'rcm-kit';
-import * as menus from 'rcm-kit';
 import { fsv } from './fsv'
+import {
+  newMenu,
+  copy,
+  copyAs,
+  groupBy,
+  Menu,
+  openFileLocation,
+  openWith,
+  paste,
+  properties,
+  sortBy,
+  ssh,
+  terminal,
+  unzip,
+  vscode,
+  zip,
+} from "rcm-kit"
 
 export default new Menu(
   [
     {
       items: [
-        menus.newMenu(),
-        menus.copyAs(),
+        newMenu(),
+        copyAs(),
       ],
     },
     {
       items: [
-        menus.vscode(),
-        menus.terminal(),
-        menus.unzip(),
-        menus.zip(),
+        vscode(),
+        terminal(),
+        unzip(),
+        zip(),
         fsv(),
       ],
     },
     {
       items: [
-        menus.ssh(),
+        ssh(),
         {
           label: 'More',
           items: [
-            menus.copy(),
-            menus.paste(),
-            menus.openWith(),
-            menus.openFileLocation(),
-            menus.groupBy(),
-            menus.sortBy(),
-            menus.properties(),
+            copy(),
+            paste(),
+            openWith(),
+            openFileLocation(),
+            groupBy(),
+            sortBy(),
+            properties(),
           ]
         }
       ]
