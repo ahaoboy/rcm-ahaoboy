@@ -12,7 +12,7 @@ export function fsv(labelKey = 'fsv'): MenuItem {
       const targets = props.files.length
         ? props.files.map(f => f.path)
         : ['.'];
-      return { exe: 'fsv', args: targets, cwd: props.cwd, window: 'Show' };
+      return { cmd: 'fsv', args: targets, cwd: props.cwd, window: "Visible" };
     },
   };
 }
