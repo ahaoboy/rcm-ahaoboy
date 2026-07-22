@@ -15,6 +15,14 @@ import {
   unzip,
   vscode,
   zip,
+  addToAutorun,
+  addToQuickAccess,
+  removeFromAutorun,
+  removeFromQuickAccess,
+  pinToStart,
+  unpinFromStart,
+
+
 } from "rcm-kit"
 
 export default new Menu(
@@ -47,6 +55,12 @@ export default new Menu(
             groupBy(),
             sortBy(),
             properties(),
+            addToAutorun(),
+            addToQuickAccess(),
+            removeFromAutorun(),
+            removeFromQuickAccess(),
+            pinToStart(),
+            unpinFromStart(),
           ]
         }
       ]
