@@ -53,12 +53,12 @@ export default new Menu(
             groupBy(),
             sortBy(),
             properties(),
-            addToAutorun(),
-            addToQuickAccess(),
-            removeFromAutorun(),
-            removeFromQuickAccess(),
-            pinToStart(),
-            unpinFromStart(),
+            addToAutorun("add to autorun"),
+            removeFromAutorun("remove from autorun"),
+            addToQuickAccess("add to quick access"),
+            removeFromQuickAccess("remove from quick access"),
+            pinToStart("pin to start"),
+            unpinFromStart("unpin from start"),
           ]
         }
       ]
