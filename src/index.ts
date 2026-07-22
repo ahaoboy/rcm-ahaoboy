@@ -16,13 +16,11 @@ import {
   vscode,
   zip,
   addToAutorun,
-  addToQuickAccess,
   removeFromAutorun,
+  addToQuickAccess,
   removeFromQuickAccess,
   pinToStart,
   unpinFromStart,
-
-
 } from "rcm-kit"
 
 export default new Menu(
