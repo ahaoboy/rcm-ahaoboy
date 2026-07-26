@@ -52,13 +52,13 @@ export default new Menu(
             openFileLocation(),
             groupBy(),
             sortBy(),
-            properties(),
             addToAutorun("add to autorun"),
             removeFromAutorun("remove from autorun"),
             addToQuickAccess("add to quick access"),
             removeFromQuickAccess("remove from quick access"),
             pinToStart("pin to start"),
             unpinFromStart("unpin from start"),
+            properties(),
           ]
         }
       ]
