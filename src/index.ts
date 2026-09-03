@@ -21,6 +21,8 @@ import {
   removeFromQuickAccess,
   pinToStart,
   unpinFromStart,
+  removeFromDesktop,
+  addToDesktop,
 } from "rcm-kit"
 
 export default new Menu(
@@ -58,6 +60,8 @@ export default new Menu(
             removeFromQuickAccess("remove from quick access"),
             pinToStart("pin to start"),
             unpinFromStart("unpin from start"),
+            addToDesktop("add to desktop"),
+            removeFromDesktop("remove from desktop"),
             properties(),
           ]
         }
