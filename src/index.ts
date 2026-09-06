@@ -23,6 +23,7 @@ import {
   unpinFromStart,
   removeFromDesktop,
   addToDesktop,
+  compress,
 } from "rcm-kit"
 
 export default new Menu(
@@ -52,6 +53,7 @@ export default new Menu(
             paste(),
             openWith(),
             openFileLocation(),
+            compress("compress"),
             groupBy(),
             sortBy(),
             addToAutorun("add to autorun"),
