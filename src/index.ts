@@ -1,4 +1,5 @@
 import { fsv } from './fsv'
+import { wiztree } from './wiztree'
 import {
   newMenu,
   copy,
@@ -54,6 +55,7 @@ export default new Menu(
             openWith(),
             openFileLocation(),
             compress("compress"),
+            wiztree(),
             groupBy(),
             sortBy(),
             addToAutorun("add to autorun"),

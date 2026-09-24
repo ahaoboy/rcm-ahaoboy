@@ -1,3 +1,5 @@
+pnpm-workspace.yaml
+
 pnpm-lock.yaml
 # Logs
 logs
@@ -26,7 +28,6 @@ dist-ssr
 bun.lock
 
 .million
-bun.lockb
 Cargo.lock
 
 .agent
